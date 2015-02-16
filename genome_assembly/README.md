@@ -1,4 +1,4 @@
-Implementation of de Bruijn graph and finding Eulerian and Hamiltonian cycle within in.
+De Bruijn Graph implementation with Eulerian and Hamiltonian walk-finder
 
 Modern short-read assembly algorithms construct a de Bruijn graph by representing all k-mer prefixes and suffixes as nodes and then drawing edges that represent k-mers having a particular prefix and suffix
 
