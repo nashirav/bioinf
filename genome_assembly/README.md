@@ -8,4 +8,5 @@ Eulerian walk allows to reconstruct the DNA sequence from its fragments (k-mers)
 <hr>
 
 [1] Phillip E C Compeau, Pavel A Pevzner and Glenn Tesler (2011). How to apply de Bruijn graphs to genome assembly. Nature Biotechnology 29, 987–991
+
 [2] Pavel A. Pevzner, Haixu Tang and Michael S. Waterman (2001). An Eulerian path approach to DNA fragment assembly. Proc Natl Acad Sci U S A., 98(17): 9748–9753
