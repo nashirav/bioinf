@@ -84,7 +84,7 @@ class deBruijnGraph:
       if self.isEulerian:
 	
 	tour = []
-	graph = self.edges
+	graph = list(self.edges) #copy
 	
 	current_vertex = graph[0][0]
 	tour.append(current_vertex)
