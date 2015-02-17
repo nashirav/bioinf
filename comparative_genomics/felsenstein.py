@@ -73,7 +73,7 @@ def TreeLikelihood(x, t, alpha):
   """Returns tree likelihood, where:
      x = table of sequences (alignment),
      t = lenght of edges,
-     alfa = son-father relationship between son and father"""
+     alfa = relationship between son and father"""
       
   likelihood = 1.
   for u in xrange(len(x[0])):

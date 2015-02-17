@@ -1,6 +1,10 @@
-De Bruijn Graph implementation with Eulerian and Hamiltonian walk-finder
+Genome assembly
+==================
 
-Modern short-read assembly algorithms construct a de Bruijn graph by representing all k-mer prefixes and suffixes as nodes and then drawing edges that represent k-mers having a particular prefix and suffix
+<h2> De Bruijn Graph implementation with Eulerian and Hamiltonian walk-finder </h2>
 
-How to apply de Bruijn graphs to genome assembly:
-http://www.nature.com/nbt/journal/v29/n11/full/nbt.2023.html
+Modern short-read assembly algorithms construct a de Bruijn graph by representing all k-mer prefixes and suffixes as nodes and then drawing edges that represent k-mers having a particular prefix and suffix [1].
+
+<hr>
+
+[1] Phillip E C Compeau, Pavel A Pevzner & Glenn Tesler (2011). How to apply de Bruijn graphs to genome assembly. Nature Biotechnology 29, 987–991
