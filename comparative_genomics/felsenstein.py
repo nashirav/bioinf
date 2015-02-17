@@ -9,7 +9,7 @@ NUCLEOTIDES = "ACTG"
 
 
 def children(w, alpha):
-  """Return children of node w"""
+  """Returns children of node w"""
   assert(w in alpha)
     
   for i in xrange(len(alpha)):
@@ -18,7 +18,7 @@ def children(w, alpha):
 
 
 def distance(w1, w2, alpha, t):
-  """Return distance between node w1 and w2"""
+  """Returns distance between node w1 and w2"""
   for i in xrange(len(alpha)):
     if w1 in [i,alpha[i]] and w2 in [i,alpha[i]]:
       return t[i]
@@ -40,10 +40,9 @@ def Pr(x,y,T):
 
 
 def PrL(k,a,u,x,t,alpha):
-  """zwraca p-stwo dla u-tej pozycji w sekwencji dla podrzewa o korzeniu o
-     numerze k, gdzie w k
-     stoi nukleotyd a (wg algorytmu Felsensteina P(Lk | a))"""
-  ###z ojca na syna i z syna na ojca
+  """Returns propability of subtree observed from node k (k is the root) at site u in the sequence,
+  where in k is nucleotide a.
+  ( P(L_k | a) )"""
   
   if k not in alpha: # if k in a leaf
     if x[k][u]==a: 	return 1
@@ -60,7 +59,7 @@ def PrL(k,a,u,x,t,alpha):
 
 
 def PrLBis(u, x, t, alpha):
-  """Return propability of tree in u position"""
+  """Returns propability of tree in u position"""
   s = 0.
   q = 1/4.
   root = 2*len(x) - 2
@@ -71,7 +70,7 @@ def PrLBis(u, x, t, alpha):
 
 
 def TreeLikelihood(x, t, alpha):
-  """Return tree likelihood, where:
+  """Returns tree likelihood, where:
      x = table of sequences (alignment),
      t = lenght of edges,
      alfa = son-father relationship between son and father"""
