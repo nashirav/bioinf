@@ -86,7 +86,7 @@ def main():
   
       x = ["ACC","CCT","AAC","GGG"] #sequences of leaves
       alpha = [4, 4, 5, 5, 6, 6, -1.] #tree with root; ( (0, 1)4, (2, 3)5 )6
-      #alpha[1..2n-1], where alpha[i] is a father of node i; 1-n leaves, n+1,...,2m-1 interior nodes
+      #alpha[1..2n-1], where alpha[i] is father of node i; 1-n leaves, n+1,...,2m-1 interior nodes
       t = [1., 2.5, 1., 1., 3., 4.5, -1.] #length of edges
 
       print TreeLikelihood(x, t, alpha)
